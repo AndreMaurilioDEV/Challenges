@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huddle</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');  
+
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Poppins, sans-serif
+        }
+
+
+            html{
+            font-size:62.5%;
+                }
+        
+
+        .width-page{
+            width: 1700px;
+            margin: 0 auto;
+        }
+        header{
+          height: 85vh;
+          width: 100%;
+          background-image: url(images/bg-hero-desktop.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-bottom: 150px;
+          background-color: lightblue;
+        }
+
+        .header-col{
+            display: flex;
+            justify-content: space-between;
+            width: 1600px;
+            margin: 0 auto;
+           
+        }
+
+        .content-header{
+            width: 600px;
+            padding-top: 100px;
+
+        }
+
+        .content-header h1{
+            font-size: 3.8rem;
+        }
+
+        .content-header p{
+            margin: 50px 0px;
+            font-size: 1.8rem;
+        }
+
+        .btn-nav button{
+            padding: 15px 70px;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+            color: black;
+            border: 0;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 1.4rem;
+
+        }
+
+        .btn-header button{
+            padding: 20px 80px;
+            background-color: deeppink;
+            color: white;
+            border: 0;
+            border-radius: 25px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+
+        
+        .img-header img{
+            width: 800px;
+            height: 600px;
+        }
+        nav{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        
+
+        main{
+            background-color: white;
+            height: 1800px;
+            margin-top: 150px;
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .sec{
+            height: 500px;
+            background-color: white;
+            margin-bottom: 50px;
+        }
+
+        .content-sec{
+            width: 500px;
+        }
+
+        .content-sec h2{
+            font-size: 2.8rem;
+        }
+
+        .content-sec p{
+            font-size: 1.5rem;
+        }
+
+        .image-sec img{
+            height: 400px;
+        }
+
+        aside{
+            width: 800px;
+            height: 200px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .content-aside{
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .content-aside h1{
+            font-size: 3.0rem;
+        }
+
+        .content-aside .btn-aside{
+          margin-top: 25px;
+        }
+
+        .content-aside button{
+            padding: 25px 120px;
+            background-color: deeppink;
+            border-radius: 25px;
+            outline: 0;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        @media (max-width:700px){
+
+
+            html{
+                font-size: 55%;
+            }
+
+            .width-page {
+                width: 95vw;
+            }
+            .header-col{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100vw;
+               
+            }
+
+            section{
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            header{
+                margin-bottom: 60px;
+                height: 1040px;
+            }
+
+            .img-header{
+                text-align: center;
+            }
+
+            .img-header img {
+            width: 400px;
+            height: 400px;
+            margin-top: 50px;
+            }
+
+            .content-header {
+            width: 500px;
+            padding-top: 50px;
+            text-align: center;
+                }
+
+                main{
+                    width: 80vw;
+                }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+       <nav class="width-page">
+        <div class="logo">
+            <img src="images/logo.svg" alt="">
+        </div>
+
+        <div class="btn-nav"><button>Try it Free</button></div>
+       </nav>
+
+       <div class="header-col " >
+           <div class="content-header">
+               <h1>Build The Community <br> Your Fans Will Love</h1>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim voluptatibus repudiandae nesciunt asperiores deleniti quae omnis? Veniam eius repellat error ut eaque unde facere deleniti cupiditate eum! Officiis, magnam dolores.</p>
+               <div class="btn-header"><button>Get Started For Free</button></div>
+            </div>
+
+               <div class="img-header">
+                <img src="images/illustration-mockups.svg" alt="">
+               </div>
+
+           
+       </div>
+
+
+    </header>
+
+    <main>
+        <section class="sec">
+                    <div class="content-sec">
+                        <h2>Grow Together</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias odit ducimus quo voluptatum at dolores amet quidem, tempore, beatae praesentium provident assumenda nesciunt repellat suscipit tenetur incidunt! Porro, magnam?</p>
+                    </div>
+                    <div class="image-sec">
+                        <img src="images/illustration-grow-together.svg" alt="">
+                    
+                    </div>
+            
+        </section>
+
+        <section class="sec">
+        
+            <div class="image-sec">
+                <img src="images/illustration-flowing-conversation.svg" alt="">
+            
+            </div>
+
+            <div class="content-sec">
+                <h2>Flowing Conversations</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias odit ducimus quo voluptatum at dolores amet quidem, tempore, beatae praesentium provident assumenda nesciunt repellat suscipit tenetur incidunt! Porro, magnam?</p>
+            </div>
+
+        </section>
+
+
+        <section class="sec">
+            <div class="content-sec">
+                <h2>Your Users</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias odit ducimus quo voluptatum at dolores amet quidem, tempore, beatae praesentium provident assumenda nesciunt repellat suscipit tenetur incidunt! Porro, magnam?</p>
+            </div>
+            <div class="image-sec">
+                <img src="images/illustration-your-users.svg" alt="">
+            
+            </div>
+        </section>
+
+        <aside>
+            <div class="content-aside">
+                <h1>Ready To Build Your Community?</h1>
+                <div class="btn-aside"><button>Get Started For Free</button></div>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

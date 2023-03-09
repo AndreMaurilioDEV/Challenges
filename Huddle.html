@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
     <title>Huddle</title>
     <style>
 
@@ -12,18 +13,21 @@
         *{
             padding: 0;
             margin: 0;
-            font-family: Poppins, sans-serif
+            font-family: Poppins, sans-serif;
         }
 
 
-            html{
-            font-size:62.5%;
-                }
+        html{
+        font-size:62.5%;
+
+          }
         
 
         .width-page{
             width: 1700px;
             margin: 0 auto;
+            display: flex;
+             align-items: center;
         }
         header{
           height: 85vh;
@@ -99,7 +103,7 @@
 
         main{
             background-color: white;
-            height: 1800px;
+            height: 1600px;
             margin-top: 150px;
             width: 1500px;
             margin: 0 auto;
@@ -141,6 +145,10 @@
             margin: 0 auto;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            background-color: white;
+            margin-top: 65px;
+             position: relative;
+            z-index: 1;
         }
 
         .content-aside{
@@ -171,7 +179,81 @@
             color: white;
         }
 
-        @media (max-width:700px){
+        footer{
+            background-color: lightslategray;
+            height: 450px;
+            width: 100%;
+            margin-top: -70px;
+
+            
+           
+        }
+
+        .footer-row{
+            background-color: lightslategray;
+            width: 1500px;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .content-footer{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .info-1{
+            width: 250px;
+        }
+
+        .info-2 p, .info-3 p{
+            margin-top: 15px;
+
+        }
+
+        .content-footer i{
+            font-size: 20px;
+            margin-right: 15px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .content-footer .info p{
+          
+            font-size: 14px;
+        }
+
+        .location, .phone, .email{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .socials{
+            display: flex;
+        }
+
+        .socials i{
+        padding: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        }
+
+        footer p {
+            color: white;
+        }
+
+        
+
+        @media (max-width: 800px){ /*TABLET - 768PX*/
 
 
             html{
@@ -219,7 +301,244 @@
                 main{
                     width: 80vw;
                 }
+
+                .width-page{
+                    width: 100vw;
+                }
+
+                nav{
+                    justify-content: space-around;
+                }
+
+                nav img{
+                    width: 150px;
+
+                }
+
+                .btn-nav button{
+                    padding: 8px 40px;
+                }
+
+                .content-sec{
+                    width: 90%;
+                    text-align: center;
+                }
+
+                .content-sec h2{
+                    text-align: center;
+                }
+
+                .content-sec p{
+                    margin-top: 7px;
+                }
+
+                .image-sec{
+                    order: 2;
+                }
+
+                .image-sec img{
+                    height: 200px;
+                }
+
+                aside{
+                    width: 90%;
+                }
+
+                footer{
+                    height: 100%;
+                }
+
+                .footer-row{
+                    width: 100%;
+                    height: 650px;
+                }
+
+                .content-footer{
+                    flex-direction: column;
+                    align-items: initial;
+                    width: 85%;
+                }
+
+                .content-footer img{
+                    margin-bottom: 20px;
+                }
+
+                .info{
+                    margin-top: 24px;
+                }
+
+                .info-2 p, .info-3 p{
+                    margin-top: 5px;
+                }
+
+                .location, .phone, .email{
+                    margin-top: 10px;
+                }
+
+                .socials{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .content-aside h1{
+                    text-align: center;
+                }
         }
+
+
+
+
+
+
+
+        @media (max-width: 450px){ /*MOBILE*/
+
+
+        html{
+                font-size: 50%;
+            }
+
+        .width-page {
+         width: 95vw;
+            }
+            .header-col{
+                 display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100vw;
+   
+                }
+
+                section{
+                display: flex;
+                flex-direction: column;
+
+                    }
+
+            header{
+                 margin-bottom: 60px;
+                height: 970px;
+                }
+
+            .img-header{
+                 text-align: center;
+                                    }
+
+                .img-header img {
+                    width: 365px;
+                    height: 350px;
+                    margin-top: 50px;
+                }
+
+                .content-header {
+                width: 415px;
+                padding-top: 50px;
+                text-align: center;
+                }
+
+         main{
+                 width: 80vw;
+    }
+
+    .width-page{
+        width: 100vw;
+    }
+
+    nav{
+        justify-content: space-around;
+    }
+
+    nav img{
+        width: 150px;
+
+    }
+
+    .btn-nav button{
+        padding: 8px 40px;
+    }
+
+    .content-sec{
+        width: 90%;
+        text-align: center;
+    }
+
+    .content-sec h2{
+        text-align: center;
+    }
+
+    .content-sec p{
+        margin-top: 7px;
+    }
+
+    .image-sec{
+        order: 2;
+    }
+
+    .image-sec img{
+        height: 200px;
+    }
+
+    aside{
+        width: 95%;
+    }
+
+    .btn-aside button{
+        font-size: 1.7rem;
+    }
+
+    footer{
+        height: 100%;
+        margin-top: -30;
+    }
+
+    .footer-row{
+        width: 100%;
+        height: 605px;
+    }
+
+    .content-footer{
+        flex-direction: column;
+        align-items: initial;
+        width: 85%;
+    }
+
+    .content-footer img{
+        margin-bottom: 30px;
+        margin-top: 80px;
+        height: 30px;
+    }
+
+    .info{
+        margin-top: 15px;
+    }
+
+    .info-2 p, .info-3 p{
+        margin-top: 5px;
+    }
+
+    .location, .phone, .email{
+        margin-top: 10px;
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-aside h1{
+        text-align: center;
+        font-size: 2.3rem;
+    }
+
+    .content-footer .info p{
+        font-size: 2.0rem;
+    }
+}
+
+
+
 
     </style>
 </head>
@@ -280,6 +599,7 @@
 
 
         <section class="sec">
+
             <div class="content-sec">
                 <h2>Your Users</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias odit ducimus quo voluptatum at dolores amet quidem, tempore, beatae praesentium provident assumenda nesciunt repellat suscipit tenetur incidunt! Porro, magnam?</p>
@@ -290,15 +610,75 @@
             </div>
         </section>
 
-        <aside>
-            <div class="content-aside">
-                <h1>Ready To Build Your Community?</h1>
-                <div class="btn-aside"><button>Get Started For Free</button></div>
-            </div>
-        </aside>
+        
     </main>
 
+    <aside>
+        <div class="content-aside">
+            <h1>Ready To Build Your Community?</h1>
+            <div class="btn-aside"><button>Get Started For Free</button></div>
+        </div>
+    </aside>
+
     <footer>
+
+        <div class="footer-row">
+
+            <div class="content-footer">
+
+                <div class="info">
+                    <img src="images/logo.svg" alt="">
+
+                    <div class="info-1">
+
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, dolorem.</p>
+                        </div>
+
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p> (00) 0-0000-0000 </p>
+                        </div>
+
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>exemplo@gmail.com</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="info">
+                    <div class="info-2">
+                        <p>About US</p>
+                        <p>What We Do</p>
+                        <p>FAQ</p>
+                    </div>
+                </div>
+
+
+                <div class="info">
+                    <div class="info-3">
+                        <p>Career</p>
+                        <p>Blog</p>
+                        <p>Contact US</p>
+                    </div>
+                </div>
+
+
+                <div class="info">
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+
+
+                </div>
+            </div>
 
     </footer>
     

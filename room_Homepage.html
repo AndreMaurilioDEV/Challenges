@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');  
+
+
+        html{
+            font-size: 62.5%;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-family: Poppins, sans-serif;
+        }
+
+        .grid-1{
+            display: grid;
+            grid-template-rows: repeat(1,1fr);
+            grid-template-columns: 60% 40%;
+            height: 678px;
+            
+        }
+
+        header{
+           
+            background-image: url(images_room/desktop-image-hero-1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: initial;
+           
+        }
+
+        nav{
+            display: flex;
+        }
+
+        .logo{
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        nav ul{
+            display: flex;
+            padding: 50px 20px;
+           
+        }
+
+        nav ul li{
+            margin-left: 45px;
+            color: white;
+            font-size: 1.7rem;
+           
+        }
+
+        .sec-grid1{
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+        }
+
+        .content-sec{
+           
+            padding: 0px 120px;
+        }
+
+        .content-sec h1{
+            
+            font-size: 3.9rem;
+        }
+
+        .content-sec p{
+            margin: 40px 0px;
+            color: #a9a9a9;
+            line-height: 31px;
+            font-size: 1.3rem;
+            font-weight: 600;
+
+        }
+
+        .content-sec span{
+            letter-spacing: 10px;
+            font-weight: 600;
+            font-size: 1.6rem;
+        }
+
+        .content-sec span::after{
+            content: ' →';
+        }
+
+        .grid-2{
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            grid-template-rows: repeat(1,fr);
+            height: 270px;
+            width: 100%;
+        }
+
+        .sec-grid2-img1{
+            height: 100%;
+            width: 100%;
+            background-image: url(images_room/image-about-dark.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .sec-grid2-img2{
+            height: 100%;
+            width: 100%;
+            background-image: url(images_room/image-about-light.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .sec-grid2 img{
+            height: 269px;
+            width: 100%;
+        }
+
+        .sec-grid2-content{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            
+        }
+
+        .content-sec2{
+            padding: 60px 60px;
+            background-color: white;
+        }
+
+        .content-sec2 h2{
+            font-size: 2.4rem;
+        }
+
+        .content-sec2 p{
+            font-size: 1.3rem;
+            margin-top: 20px;
+            color: #a9a9a9;
+            font-weight: 600;
+        }
+
+       
+    </style>
+</head>
+<body>
+
+    <div class="grid-1">
+
+
+        <header>
+
+       
+        <nav>
+
+            <div class="logo">
+                <img src="images_room/logo.svg" alt="">
+            </div>
+
+            <ul>
+                <li>home</li>
+                <li>shop</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+            
+        </nav>
+
+        </header>
+
+        <div class="sec-grid1">
+
+            <div class="content-sec">
+                <h1>Discover innovative <br> ways to decorate</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, fugiat ipsam facere consequatur illum laudantium cum provident ducimus nam! Deleniti consequuntur commodi officia fuga unde, aut necessitatibus ex architecto mollitia illum at, nobis totam sapiente libero enim corporis, molestiae impedit quibusdam! Sit illo placeat dignissimos impedit saepe cum quaerat odit?</p>
+                <span>SHOP NOW</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="grid-2">
+
+        <section class="sec-grid2-img1">
+          
+    
+        </section>
+
+        <section class="sec-grid2-content">
+
+            <div class="content-sec2">
+                <h2>ABOUT OUR FOURNITURE</h2>
+                <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quo commodi accusantium molestias, fugit totam dicta voluptatibus perspiciatis sint debitis! Id nisi, nemo rem velit, laborum veritatis ipsum laudantium incidunt illo aliquam unde porro facere ex obcaecati consectetur consequuntur! Facilis neque aliquam ipsa sint quasi dicta, laboriosam nisi id magnam!</P>
+            </div>
+
+
+        </section>
+
+
+        <section class="sec-grid2-img2">
+          
+
+
+        </section>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar e esconder senha</title>
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        body{
+           width: 100vw;
+           height: 100vh;
+           display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            div{
+
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+        
+        }
+
+        #inp-pass{
+            border-radius: 10px;
+            outline: 0;
+            border: 1px solid gray;
+            padding: 10px 25px 10px 10px;
+            
+
+        }
+
+        #inp-pass:focus{
+            border: 2px solid black;
+        }
+
+        i{
+            position: absolute;
+            right: 5%;
+            cursor: pointer;
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <div>
+        
+            <input type="password" id="inp-pass">
+             <i class="fa-solid fa-eye" id="btn-senha" onclick="esconherSenha()"></i>
+        
+    </div>
+
+
+    <script>
+
+        function esconherSenha(){
+            var inputPass = document.getElementById('inp-pass')
+            var btn = document.getElementById('btn-senha')
+
+        if(inputPass.type === 'password' ){
+            inputPass.setAttribute('type','text')
+            btn.classList.replace('fa-eye','fa-eye-slash')
+        }else{
+            inputPass.setAttribute('type','password')
+            btn.classList.replace('fa-eye-slash','fa-eye')
+        }
+        }
+        
+
+
+    </script>
+    
+</body>
+</html>

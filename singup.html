@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+    <title>Sign Up</title>
+</head>
+<style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');  
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: lightcoral;
+        background-image: url(images/bg-intro-desktop.png);
+    }
+
+    .container{
+        display: flex;
+        width: 1100px;
+        height: 370px;
+}
+
+    .content{
+        padding: 40px;
+        color: white;
+    }
+
+    .content h1{
+        font-size: 40px;
+    }
+    
+    .content p {
+        margin-top: 30px;
+    }
+    
+
+    .signup{
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 15px;
+        height: 400px;
+       
+    }
+
+    input{
+      width: 100%;
+        margin-top: 20px;
+        padding: 10px 0px 10px 5px;
+        outline: 0;
+        border: 1px solid #A28ABF;
+        border-radius: 5px;
+
+        
+    }
+
+    input:focus{
+        border: 1.5px solid #6C5C7F;
+    }
+
+    form{
+        width: 430px;
+    }
+
+    input::placeholder{
+      
+        padding-left: 10px;
+
+    }
+
+    .payement{
+        background-color: #435772;
+        padding: 15px 10px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        width: 419px;
+    }
+
+    .payement p{
+        font-size: 12px;
+    }
+
+    #btn-submit{
+       
+        color: #435772;
+        margin-top: 20px;
+        width: 437px;
+        cursor: pointer;
+    }
+
+    .stylebutton{
+        color: #435772;
+        margin-top: 20px;
+        width: 437px;
+        cursor: pointer;
+        background-color: green;
+
+    }
+
+    
+
+
+    .terms{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    #chk{
+        width: 10%;
+        margin: 0;
+    }
+
+    .terms p{
+        font-size: 14px;
+    }
+
+    #strong-terms{
+        color: red;
+        cursor: pointer;
+    }
+
+
+   
+
+    .password{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 437px;
+    }
+
+    .password i{
+        position: absolute;
+        right: 3%;
+        top: 53%;
+        cursor: pointer;
+        
+    }
+
+</style>
+<body>
+
+   <div class="container">
+    <div class="content">
+        <h1> Learn to code by <br> watching others </h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, animi temporibus nisi expedita hic ab? Consectetur quas soluta velit cum, labore dicta autem quia vero accusantium, tenetur laboriosam recusandae dolorem iusto alias aperiam consequuntur quod exercitationem magni praesentium dolores officiis quae quo, in voluptas. Id eligendi sapiente corporis nihil iste.</p>
+    </div>
+
+    
+    <div class="signup">
+        <div class="payement"><p><strong>Try it Free 7 days</strong> then $20/mo. thereafter</p></div>
+        <form action="#" method="post">
+            <input type="text"  id="inp-firstname" placeholder="First Name">
+            <input type="text"  id="inp-lastname" placeholder="Last Name">
+            <input type="email" id="inp-email" placeholder="Email Adress">
+            <div class="password"><input type="password"  id="inp-pass" placeholder="Password"> <i class="fa-solid fa-eye" id="btn-senha" onclick="esconherSenha()"></i></div>
+            <div class="terms"><input type="checkbox" id="chk"> <p>Agreed with the <strong id="strong-terms">Term and service</strong></p></div>
+            <input type="submit" value="CLAIM YOUR TRIAL FREE"  id="btn-submit"> 
+        </form>
+    </div>
+   </div>
+
+   <script>
+
+   
+
+
+     function esconherSenha(){
+            var inputPass = document.getElementById('inp-pass')
+            var btn = document.getElementById('btn-senha')
+
+        if(inputPass.type === 'password' ){
+            inputPass.setAttribute('type','text')
+            btn.classList.replace('fa-eye','fa-eye-slash')
+        }else{
+            inputPass.setAttribute('type','password')
+            btn.classList.replace('fa-eye-slash','fa-eye')
+        }
+        }
+
+
+        
+        var submit = document.getElementById('btn-submit')
+        var checkbox = document.getElementById('chk')
+
+        toggleBtn();
+
+
+        checkbox.addEventListener('change', toggleBtn);
+
+
+        function toggleBtn(){
+
+            submit.disabled = !checkbox.checked;
+            
+
+        }
+
+   
+
+       
+
+     
+    
+  
+   </script>
+   
+    
+</body>
+</html>

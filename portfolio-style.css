@@ -4,3 +4,91 @@
     list-style: none;
     text-decoration: none;
 }
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    margin: 0 auto;
+    height: 50px;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+nav ul{
+    display: flex;
+   
+}
+
+nav li{
+    margin-left: 40px;
+}
+
+#main{
+    height: 900px;
+   
+}
+
+.content-main{
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.skills{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.skills ul{
+    display: flex;
+    
+}
+
+.skills li{
+    margin-left: 50px;
+}
+.image-main{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+#sobre{
+    width: 1200px ;
+    margin: 0 auto;
+    height: 650px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-about{
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+}
+
+.content-about h4, h3{
+    margin-bottom: 25px;
+}
+
+.text-content{
+    width: 50%;
+}
+
+
+.img-art-about{
+    height: 350px;
+    width: 350px;
+    background-color: black;
+}

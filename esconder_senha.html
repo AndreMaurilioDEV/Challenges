@@ -58,17 +58,20 @@
     <div>
         
             <input type="password" id="inp-pass">
-             <i class="fa-solid fa-eye" id="btn-senha" onclick="esconherSenha()"></i>
+             <i class="fa-solid fa-eye" id="btn-senha" ></i>
         
     </div>
 
 
     <script>
 
-        function esconherSenha(){
-            var inputPass = document.getElementById('inp-pass')
-            var btn = document.getElementById('btn-senha')
+        (function(){
+        
+        var inputPass = document.getElementById('inp-pass')
+        var btn = document.getElementById('btn-senha')
 
+        function esconherSenha(){
+           
         if(inputPass.type === 'password' ){
             inputPass.setAttribute('type','text')
             btn.classList.replace('fa-eye','fa-eye-slash')
@@ -77,6 +80,11 @@
             btn.classList.replace('fa-eye-slash','fa-eye')
         }
         }
+
+        btn.addEventListener('click', esconherSenha);
+        
+        })();
+
         
 
 

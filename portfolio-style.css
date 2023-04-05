@@ -1,8 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
 *{
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
+    font-family: Poppins, sans-serif;
 }
 
 
@@ -11,9 +15,9 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightblue;
+    background-color: white;
     margin: 0 auto;
-    height: 50px;
+    height: 70px;
     justify-content: space-between;
     padding: 0px 40px;
 }
@@ -28,13 +32,21 @@ nav li{
 }
 
 #main{
-    height: 900px;
+    height: 875px;
+    background-color: #f9f9f9;
    
 }
 
-.content-main{
-    height: 700px;
+.container-main{
+    display: flex;
+    height: 100%;
     width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-main{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -42,10 +54,17 @@ nav li{
   
 }
 
+.desc-main, .link-main{
+    margin-top: 20px;
+}
+
+.main-text{
+    width: 50%;
+}
+
 .skills{
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    margin-top: 70px;
 }
 
 .skills ul{
@@ -60,13 +79,13 @@ nav li{
     width: 500px;
     height: 500px;
     background-color: black;
+    border-radius: 50%;
 }
 
 #sobre{
     width: 1200px ;
     margin: 0 auto;
     height: 650px;
-    background-color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,4 +110,63 @@ nav li{
     height: 350px;
     width: 350px;
     background-color: black;
+}
+
+#portfolio-sec{
+    background-color: #f9f9f9;
+    padding: 50px 0px;
+   
+}
+
+.container-portfolio{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.container-portfolio h2{
+    padding: 50px 0px;
+}
+
+.portfolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 70px;
+    border-radius: 10px;
+   
+}
+
+.portfolio-reverso{
+    flex-direction: row-reverse
+}
+
+.content-portfolio{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.text-portfolio{
+    width: 50%;
+    height: 350px;
+    width: 420px;
+    text-align: center;
+}
+
+.desc-portfolio p{
+    font-size: 18px;
+}
+
+.img-portofilio{
+    height: 350px;
+    width: 530px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.skills-portfolio, .links-portfolio{
+    margin-top: 20px;
 }

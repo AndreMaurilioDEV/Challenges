@@ -33,16 +33,19 @@ i{
 header{
     display: flex;
     justify-content: center;
+    position: fixed;
     align-items: center;
     background-color: white;
     margin: 0 auto;
     height: 70px;
+    width: 100%;
     justify-content: space-between;
-    padding: 0px 40px;
+    
 }
 
 .logo h1{
     font-size: 2.8rem;
+    padding-left: 20px;
 }
 
 nav a{
@@ -57,11 +60,16 @@ nav a:hover{
 nav ul{
     display: flex;
     gap: 40px;
+    padding-right: 20px;
    
 }
 
 nav li{
     font-size: 1.8rem;
+}
+
+nav .btn-mobile{
+    display: none;
 }
 
 
@@ -365,21 +373,26 @@ footer i:hover{
 
 }
 
+#btn-mobile{
+    display: none;
+}
+
 @media(max-width: 600px){
 
     html{
-        font-size: 62.5%;
+        font-size: 68.5%;
     }
 
     body{
         width: 100vw;
+        position: relative ;
     }
 
     .menu{
         display: none;
     }
 
-    header, #main, #sobre,#portfolio-sec, #contato, .container-main{
+     #main, #sobre,#portfolio-sec, #contato, .container-main{
         width: 100vw;
     }
 
@@ -389,15 +402,17 @@ footer i:hover{
 
     header{
         padding: 0;
+        
     }
 
     #main{
-        height: 570px;
+        height: 630px;
     }
 
     .content-main{
         display: flex;
         justify-content: center;
+        margin-top: 55px;
     }
 
     .title-main, .desc-main, .link-main{
@@ -427,6 +442,7 @@ footer i:hover{
 
     #sobre{
         height: 900px;
+        
     }
 
     #sobre .container{
@@ -462,12 +478,16 @@ footer i:hover{
         height: 100%;
     }
 
+    .content-portfolio .img-portofilio{
+        width: 450px;
+    }
+
     .container-portfolio h2{
-        padding: 25px 0px 25px 20px;
+        padding: 45px 0px 45px 20px;
     }
 
     #portfolio-sec{
-        padding: 3px 0px;
+        padding: 7px 0px;
     }
 
     .portfolio{
@@ -504,6 +524,65 @@ footer i:hover{
         width: 100%;
         justify-content: center;
     }
+
+
+
+    nav{
+        padding-right: 20px;
+    }
+
+    nav ul{
+        padding: 0;
+    }
+
+    nav ul li{
+        padding: 40px 0px;
+    }
+
+    nav li{
+        font-size: 2.5rem;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        left: 1px;
+        width: 99%;
+        top: 70px;
+        height: 4000px;
+        text-align: center;
+        background-color: white;
+        visibility: hidden;
+        z-index: 1000;
+        
+    }
+
+    #nav.active .menu{
+        position: fixed;
+        height: 100vh;
+        visibility: visible;
+    }
+
+    #nav.active header{
+        position: fixed;
+    }
+
+    #esconde.escondeMenu .menu{
+        visibility: hidden;
+
+    }
+
+    
+
+   #btn-mobile{
+        display: block;
+    }
+
+    
+
+    
+
+
 
 
         

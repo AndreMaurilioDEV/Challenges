@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+}
+
+header .logo{
+    background-color: #0CABA8;
+    padding: 19px;
+    color: white;
+}
+
+.btn-mobile{
+    margin-right: 10px;
+}
+
+nav #menu{
+    display: none;
+}
+
+#main{
+    height: 500px;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    background-image: url(conteudo_infusion/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    width: 400px;
+}
+
+.container-title{
+    display: flex;
+    justify-content: center;
+}
+
+.content .title{
+    margin: 20px 0px;
+    background-color: #0CABA8;
+    padding: 30px 80px;
+    color: white;
+}
+
+.sub-title{
+    text-align: center;
+    background-color: #3A3E41;
+    color: white;
+    width: 90%;
+    padding: 15px 0px;
+}
+
+.container-btn-main{
+    display: flex;
+    justify-content: center;
+}
+
+.button-main{
+    margin: 20px 0px;
+    padding: 14px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    color: white;
+}
+
+#cards{
+    height: 1200px;
+    margin: 30px 0px;
+}
+
+.container-cards{
+    height: 100%;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.card{
+    height: 500px;
+    width: 100%;
+    border-left: 1px solid #d3d3d3;
+ 
+   
+}
+
+.card .img{
+    display: flex;
+    height: 300px;
+    width: 100%;
+  
+}
+
+.img img{
+    height: 100%;
+    width: 100%;
+  
+}
+
+.middle-img{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+    margin-bottom: 10px;
+   
+}
+
+.middle-img img{
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+}
+
+.title-card{
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.desc-card{
+    text-align: center;
+    margin-top: 25px;
+}
+

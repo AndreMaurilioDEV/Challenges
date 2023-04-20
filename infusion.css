@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -75,9 +80,15 @@ nav #menu{
     color: white;
 }
 
+.button-main:hover{
+    transform: scale(1.1);
+    background-color: rgb(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
 #cards{
-    height: 1200px;
-    margin: 30px 0px;
+    height: 1800px;
+    margin: 30px 0px 0px 0px;
 }
 
 .container-cards{
@@ -86,8 +97,12 @@ nav #menu{
     margin: 0 auto;
 }
 
+.container-cards:last-child{
+    border-bottom: 1px solid #d3d3d3;
+}
+
 .card{
-    height: 500px;
+    height: 450px;
     width: 100%;
     border-left: 1px solid #d3d3d3;
  
@@ -96,7 +111,7 @@ nav #menu{
 
 .card .img{
     display: flex;
-    height: 300px;
+    height: 225px;
     width: 100%;
   
 }
@@ -123,7 +138,7 @@ nav #menu{
 .title-card{
     font-size: 12px;
     text-align: center;
-    margin: 20px 0px;
+    margin: 15px 0px;
 }
 
 .desc-card{
@@ -131,3 +146,67 @@ nav #menu{
     margin-top: 25px;
 }
 
+#sec-3{
+    background-color: #f9f9f9;
+}
+
+.container-3{
+    width: 95vw;
+    margin: 0 auto;
+
+}
+
+.title-content-3 h2{
+    padding: 50px 0px 10px;
+}
+
+.desc-content-3{
+    padding: 25px 0px;
+}
+
+.btn-content-3{
+    margin-top: 10px;
+}
+
+#articles{
+    width: 100%;
+}
+
+.title-article{
+    background-color: #0CABA8;
+    color: white;
+    padding: 25px 10px;
+}
+
+
+.container-article{
+    width: 100%;
+
+}
+
+.container-article img{
+    width: 100%;
+}
+
+.icon-article{
+    position: relative;
+    width: 100%;
+}
+
+
+
+.overlay{
+    background-color: rgb(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    
+}
+
+.overlay:hover{
+    opacity: 0;
+    cursor: pointer;
+}

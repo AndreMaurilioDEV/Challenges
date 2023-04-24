@@ -380,7 +380,7 @@ footer i:hover{
 @media(max-width: 600px){
 
     html{
-        font-size: 68.5%;
+        font-size: 62.5%;
     }
 
     body{
@@ -415,6 +415,10 @@ footer i:hover{
         margin-top: 55px;
     }
 
+    .main-text{
+        width: 100%;
+    }
+
     .title-main, .desc-main, .link-main{
         text-align: center;
     }
@@ -441,7 +445,7 @@ footer i:hover{
     }
 
     #sobre{
-        height: 900px;
+        height: 1000px;
         
     }
 
@@ -468,7 +472,8 @@ footer i:hover{
     }
 
     .container-portfolio{
-        width: 100vw;
+        width: 85vw;
+        margin: 0 auto;
        
     }
 
@@ -476,10 +481,17 @@ footer i:hover{
         flex-direction: column;
         align-items: center;
         height: 100%;
+         width: 100%;
+         
+    }
+    .container-portfolio h2 {
+        
+        text-align: center;
+
     }
 
     .content-portfolio .img-portofilio{
-        width: 450px;
+        width: 90%;
     }
 
     .container-portfolio h2{
@@ -491,17 +503,29 @@ footer i:hover{
     }
 
     .portfolio{
-        width: 100vw;
+        width: 100%;
         height: 800px;
+        margin: 20px auto;
         
     }
 
+    .links-portfolio{
+        margin-top: 25px;
+    }
+
+   
+
+    .text-portfolio{
+        width: 100%;
+    }
+
     .title-portfolio{
-        margin: 25px 0px;
+        margin: 0px 0px;
     }
 
     .desc-portfolio{
         font-size: 1.8rem;
+        width: 100%;
     }
 
     .contato-content{
@@ -521,8 +545,17 @@ footer i:hover{
     }
 
     .content-footer{
-        width: 100%;
+        width: 90%;
         justify-content: center;
+        margin: 0 auto;
+    }
+
+    .content-footer h3{
+        font-size: 1.2rem;
+    }
+
+    .link-footer{
+        display: flex;
     }
 
 
@@ -575,7 +608,25 @@ footer i:hover{
     
 
    #btn-mobile{
+        display: flex;
+        padding: 9px;
+        border-radius: 50%;
+        background-color: #f9f9f9;
+        outline: 0;
+        border: 0;
+    }
+
+    #hamburger{
+        width: 18px;
+        border-top: 2px solid black;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
         display: block;
+        width: 18px;
+        border-top: 2px solid black;
+        margin-top: 5px;
     }
 
     

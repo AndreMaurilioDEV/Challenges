@@ -21,626 +21,512 @@ i{
    
 }
 
-
-
-
-
-
-
-
-
-
-header{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    align-items: center;
+.menu{
+    display: block;
+    position: absolute;
+    left: 1px;
+    width: 99%;
+    top: 55px;
+    height: 4000px;
+    text-align: center;
     background-color: white;
-    margin: 0 auto;
-    height: 70px;
-    width: 100%;
-    justify-content: space-between;
+    visibility: hidden;
+    z-index: 1000;
     
 }
 
-.logo h1{
-    font-size: 2.8rem;
-    padding-left: 20px;
+#nav.active .menu{
+    position: fixed;
+    height: 100vh;
+    visibility: visible;
 }
 
-nav a{
-    color: black;
-    font-weight: 600;
+#nav.active header{
+    position: fixed;
 }
 
-nav a:hover{
-    color: blue;
+#esconde.escondeMenu .menu{
+    visibility: hidden;
+
 }
 
-nav ul{
+
+#btn-mobile{
     display: flex;
-    gap: 40px;
-    padding-right: 20px;
-   
+    padding: 9px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    outline: 0;
+    border: 0;
 }
 
-nav li{
-    font-size: 1.8rem;
+#hamburger{
+    width: 18px;
+    border-top: 2px solid black;
 }
 
-nav .btn-mobile{
-    display: none;
+#hamburger::after, #hamburger::before{
+    content: '';
+    display: block;
+    width: 18px;
+    border-top: 2px solid black;
+    margin-top: 5px;
+}
+
+header{
+    width: 100vw;
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    position: fixed;
+    background-color: white;
 }
 
 
 #main{
-    height: 875px;
-    background-color: #f9f9f9;
-   
+    width: 100vw;
+    height: 530px;
 }
 
 .container-main{
     display: flex;
-    height: 100%;
-    width: 1200px;
-    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #f9f9f9;
 }
 
 .content-main{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
+    text-align: center;
 }
-
-.container-main i:hover{
-    color: blue;
-}
-
 
 .title-main h1{
-    font-size: 4.8rem;
+    font-size: 3.9rem;
+
+}
+
+.desc-main{
+    margin: 20px 0px;
 }
 
 .desc-main p{
-    font-size: 1.6rem;
-}
-
-
-.desc-main, .link-main{
-    margin-top: 20px;
-}
-
-.main-text{
-    width: 50%;
+    font-size: 1.5rem;
 }
 
 .skills{
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
-}
-
-.skills h2{
- font-size: 1.8rem;
+    
+    margin: 40px 0px;
+   
+    
 }
 
 .skills ul{
     display: flex;
-    
-    
-}
-
-.skills li{
-    margin-left: 50px;
-}
-
-.skills i{
-    font-size: 3.5rem;
-    padding: 13px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 50%;
-}
-
-
-.image-main{
-    width: 500px;
-    height: 500px;
-    background-color: black;
-    border-radius: 50%;
-}
-
-#sobre{
-    width: 1200px ;
-    margin: 0 auto;
-    height: 650px;
-    display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 25px;
+    gap: 20px;
 }
 
-.content-about{
-    display: flex;
-    justify-content: space-around;
-    height: 350px;
+
+#sobre .container{
+    padding: 10px;
 }
 
-.content-about h4, h3{
-    margin-bottom: 25px;
-}
-
-.text-content{
-    width: 50%;
-}
-
-.text-content h4{
-    font-size: 1.8rem;
+.content-about p{
+    font-size: 1.4rem;
 }
 
 .text-content h3{
-    font-size: 2.4rem;
+    font-size: 1.7rem;
 }
 
-.text-content p{
+.text-content h4{
     font-size: 1.5rem;
+
 }
-
-
-
 
 .img-art-about{
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 100%;
     background-color: black;
+    margin-top: 10px;
+}
+
+.text-content h3{
+    margin: 20px 0px;
 }
 
 #portfolio-sec{
     background-color: #f9f9f9;
-    padding: 50px 0px;
+    display: flex;
    
+    
 }
 
 .container-portfolio{
+    width: 90vw;
     margin: 0 auto;
-    width: 1200px;
 }
 
 .container-portfolio h2{
-    font-size: 1.8rem;
-    padding: 50px 0px;
-}
-
-.portfolio{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 1200px;
-    height: 400px;
-    background-color: white;
-    margin-bottom: 70px;
-    border-radius: 10px;
-   
-}
-
-.portfolio-reverso{
-    flex-direction: row-reverse
+    text-align: center;
+    margin-top: 25px;
+    
 }
 
 .content-portfolio{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+}
+
+.portfolio{
+    background-color: white;
+    height: 550px;
+    margin: 25px 0px;
+    border-radius: 10px;
+    
 }
 
 .title-portfolio{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.title-portfolio h3{
     font-size: 1.9rem;
+
+}
+
+.desc-portfolio{
+   margin: 10px 0px;
+   text-align: center;
+}
+
+.desc-portfolio p{
+    font-size: 1.4rem;
+}
+
+.skills-portfolio{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.custom-skills p{
+    font-size: 1.2rem;
 }
 
 .links-portfolio{
     display: flex;
+    gap: 25px;
     justify-content: center;
-    margin-top: 40px;
-    gap: 20px;
-    font-size: 1.5rem;
+    margin-top: 15px;
 }
 
 .links-portfolio a{
-    display: flex;
-    color: black;
-    gap: 5px;
-}
-
-.links-portfolio a:hover{
-    color: blue;
-}
-
-.links-portfolio a:hover i{
-    color: blue;
-}
-
-
-
-.text-portfolio{
-    width: 50%;
-    height: 350px;
-    width: 420px;
-    text-align: center;
-}
-
-.desc-portfolio p{
-    font-size: 18px;
+    font-size: 1.2rem;
 }
 
 .img-portofilio{
-    height: 350px;
-    width: 530px;
+    height: 250px;
+    width: 90%;
+    margin: 0 auto;
     background-color: black;
     border-radius: 10px;
 }
 
-.skills-portfolio{
-    margin-top: 20px;
-}
-
-.skills-portfolio{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.skills-portfolio p{
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-.custom-skills{
-    padding: 10px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
 
 #contato{
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.infos-contato{
-    display: flex;
-}
-
-.contato-content{
-    margin-top: 50px;
-}
-.contato-content h2{
-    font-size: 1.8rem;
+   
+    width: 100vw;
 }
 
 .contato-content h3{
-    font-size: 2.2rem;
-    margin: 25px 0;
+    margin: 15px 0px;
+    text-align: center;
+    font-size: 1.8rem;
+
 }
 
-.localizacao-contato, .email-contato{
-    margin-right: 60px;
-}
-
-.localizacao-contato h3, .email-contato h3{
-    margin-bottom: 20px;
+.contato-content h2{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
 }
 
 .localizacao-contato p, .email-contato p{
     font-size: 1.4rem;
+    text-align: center;
+}
+
+
+
+
+.localizacao-contato h3, .email-contato h3 {
+    margin-top: 5px;
+}
+
+.email-contato{
+    margin-top: 10px;
+}
+
+
+
+.container-contato{
+    display: flex;
+    justify-content: center;
 }
 
 footer{
-    color: white;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    height: 125px;
+    background-color: #696969;
+    height: 65px;
     margin-top: 50px;
 }
 
-footer i{
+.content-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
     color: white;
+}
+.content-footer h3{
+    font-size: 1.0rem;
+}
+
+.link-footer{
+    display: flex;
     
 }
 
-footer i:hover{
-    transform: scale(1.3);
-   
+
+.link-footer i{
+    color: white;
+}
+
+.link-footer i:hover{
+    transform: scale(1.1);
 }
 
 
+@media screen and (min-width:480px) {
 
-.content-footer{
-    width: 990px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.link-footer a{
-    margin-left: 20px;
-}
-
-.content-footer h3{
-    margin: 0;
-    font-size: 1.6rem;
-
-}
-
-#btn-mobile{
-    display: none;
-}
-
-@media(max-width: 600px){
-
-    html{
-        font-size: 62.5%;
+    .portfolio{
+        height: 575px;
     }
-
-    body{
-        width: 100vw;
-        position: relative ;
-    }
-
-    .menu{
-        display: none;
-    }
-
-     #main, #sobre,#portfolio-sec, #contato, .container-main{
-        width: 100vw;
-    }
-
-    .logo h1{
-        padding-left: 20px;
-    }
-
-    header{
-        padding: 0;
-        
-    }
-
-    #main{
-        height: 630px;
-    }
-
-    .content-main{
-        display: flex;
-        justify-content: center;
-        margin-top: 55px;
-    }
-
-    .main-text{
-        width: 100%;
-    }
-
-    .title-main, .desc-main, .link-main{
-        text-align: center;
-    }
-
-    .image-main{
-        display: none;
-    }
-
-    .skills{
-        display: block;
-        text-align: center;
-    }
-
-    .skills ul{
-        justify-content: center;
-    }
-
-    .skills h2{
-        margin: 20px 0px;
-    }
-
-    .skills li{
-        margin: 0;
-    }
-
-    #sobre{
-        height: 1000px;
-        
+    .content-portfolio .img-portofilio{
+        height: 350px;
+         width: 85%;
     }
 
     #sobre .container{
-        height: 100%;
+        padding:  20px ;
     }
-
-    .content-about{
-       
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-    }
-
     .text-content{
-        width: 87%;
-       
-    }
-
-    .content-about .img-art-about{
-        margin-top: 50px;
-          
-    }
-
-    .container-portfolio{
-        width: 85vw;
-        margin: 0 auto;
-       
-    }
-
-    .content-portfolio{
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-         width: 100%;
-         
-    }
-    .container-portfolio h2 {
-        
-        text-align: center;
-
-    }
-
-    .content-portfolio .img-portofilio{
-        width: 90%;
-    }
-
-    .container-portfolio h2{
-        padding: 45px 0px 45px 20px;
-    }
-
-    #portfolio-sec{
-        padding: 7px 0px;
-    }
-
-    .portfolio{
-        width: 100%;
-        height: 800px;
-        margin: 20px auto;
-        
-    }
-
-    .links-portfolio{
-        margin-top: 25px;
-    }
-
-   
-
-    .text-portfolio{
-        width: 100%;
-    }
-
-    .title-portfolio{
-        margin: 0px 0px;
-    }
-
-    .desc-portfolio{
-        font-size: 1.8rem;
-        width: 100%;
-    }
-
-    .contato-content{
         text-align: center;
     }
-
-    .infos-contato{
-        flex-direction: column;
-    }
-
-    .localizacao-contato, .email-contato {
-        margin: 0;
-    }
-
-    footer{
-        width: 100vw;
-    }
-
-    .content-footer{
-        width: 90%;
+    .container-img{
+        display: flex;
         justify-content: center;
-        margin: 0 auto;
     }
-
-    .content-footer h3{
-        font-size: 1.2rem;
+    .img-art-about{
+        width: 55%;
     }
-
-    .link-footer{
-        display: flex;
-    }
+ }
 
 
 
-    nav{
-        padding-right: 20px;
-    }
-
-    nav ul{
-        padding: 0;
-    }
-
-    nav ul li{
-        padding: 40px 0px;
-    }
-
-    nav li{
-        font-size: 2.5rem;
-    }
-
-    .menu{
-        display: block;
-        position: absolute;
-        left: 1px;
-        width: 99%;
-        top: 70px;
-        height: 4000px;
-        text-align: center;
-        background-color: white;
-        visibility: hidden;
-        z-index: 1000;
-        
-    }
-
-    #nav.active .menu{
-        position: fixed;
-        height: 100vh;
-        visibility: visible;
-    }
-
-    #nav.active header{
-        position: fixed;
-    }
-
-    #esconde.escondeMenu .menu{
-        visibility: hidden;
-
-    }
-
-    
-
-   #btn-mobile{
-        display: flex;
-        padding: 9px;
-        border-radius: 50%;
-        background-color: #f9f9f9;
-        outline: 0;
-        border: 0;
-    }
-
-    #hamburger{
-        width: 18px;
-        border-top: 2px solid black;
-    }
-
-    #hamburger::after, #hamburger::before{
-        content: '';
-        display: block;
-        width: 18px;
-        border-top: 2px solid black;
-        margin-top: 5px;
-    }
-
-    
-
-    
-
-
-
-
-        
-
-    
-
-
-
-
+ @media screen and (min-width:600px) { }
+ #main{
+    height: 875px;
 }
+
+ @media screen and (min-width:768px) { 
+    
+    .container-portfolio{
+        width: 70vw;
+    }
+
+ }
+
+
+ @media screen and (min-width:992px) { 
+
+    @media screen and (min-width:992px) { 
+
+
+        html{
+            font-size: 72.5%;
+        }
+        #btn-mobile{
+            display: none;
+        }
+
+        .logo{
+            padding-left: 20px;
+        }
+
+        header{
+            height: 80px;
+        }
+        nav {
+            
+            height: 100%;
+        }
+
+       
+
+        .menu{
+            z-index: 0;
+            height: 100%;
+            display: flex;
+            position: relative;
+            top: 0;
+            background-color: none;
+            align-items: center;
+            visibility: visible;
+            gap: 20px;
+            padding: 0px 20px;
+        }
+        .menu li{
+            font-size: 1.5rem;
+        }
+
+        .content-main{
+            display: flex;
+           
+            gap: 30px;
+            padding: 20px;
+        }
+        .image-main{
+            width: 350px;
+            height: 350px;
+            background: black;
+            border-radius: 50%;
+        }
+
+        .main-text{
+            text-align: left;
+        }
+
+
+        .skills{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .skills ul{
+            margin: 0;
+        }
+
+        .desc-main{
+            width: 75%;
+        }
+
+        .container .content-about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .img-art-about{
+            width: 350px;
+            height: 350px;
+            border-radius: 10px;
+        }
+
+        .text-content{
+            width: 50%;
+            text-align: left;
+        }
+
+        .container-portfolio{
+            width: 80vw;
+        }
+
+        .portfolio{
+            height: 375px;
+            display: flex;
+            align-items: center;
+        }
+
+        .content-portfolio{
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            width: 85vw;
+        }
+
+        .text-portfolio{
+            width: 50%;
+            height: 100%;
+        }
+
+        .skills-portfolio{
+            margin: 25px;
+        }
+
+        .links-portfolio{
+            margin-top:  25px;
+        }
+
+        .content-portfolio .img-portofilio{
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (min-width:1400px) {
+
+
+
+        .container-portfolio{
+            width: 60vw;
+        }
+
+
+        .content-portfolio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-portfolio .img-portofilio{
+            width: 50%;
+        }
+        }
+
+    } 
+
+    @media screen and (min-width:1900px) {
+        #main{
+            height: 950px;
+        }
+    }
+
+ 
+
+
+
+       
+
+    
+
+    
+
+
+
+
+        
+
+    
+
+
+
+

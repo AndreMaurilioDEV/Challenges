@@ -8,6 +8,10 @@ a{
     color: white;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 
 
 header{
@@ -145,6 +149,12 @@ nav #menu li{
 #cards{
     height: 1800px;
     margin: 30px 0px 0px 0px;
+}
+
+.card:hover{
+    outline: 4px solid #0CABA8;
+    cursor: pointer;
+
 }
 
 .container-cards{
@@ -421,6 +431,15 @@ nav #menu li{
     }
 }
 
+@media screen and (min-width:600px){
+    .container-cards {
+        height: 100%;
+        width: 65vw;
+        margin: 0 auto;
+}
+
+}
+
 
 @media screen and (min-width:768px){
 
@@ -454,7 +473,6 @@ nav #menu li{
             position: fixed;
             z-index: 1000;
             
-          
         }
 
         #main{
@@ -513,8 +531,13 @@ nav #menu li{
         }
 
         .container-cards{
+           
+            height: 100%;
+            width: 95vw;
+            margin: 0 auto;
             display: flex;
-            gap: 15px;
+            gap: 2px;
+          
 
         }
 
@@ -540,10 +563,11 @@ nav #menu li{
             height: 550px;
         }
 
-        .card:hover{
-            border: 4px solid #0CABA8;;
-        
+        .card:hover .middle-img img{
+            outline: 4px solid #0CABA8;
         }
+
+       
 
         .card{
             height: 95%;

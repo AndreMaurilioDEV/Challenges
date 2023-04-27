@@ -369,6 +369,12 @@ nav #menu li{
     font-size: 30px;
 }
 
+#prev-btn-text, #next-btn-text{
+height: 20px;
+}
+
+
+
 
 #prev-btn, #next-btn, #prev-btn-text, #next-btn-text{
     width: 20%;
@@ -416,6 +422,51 @@ nav #menu li{
     opacity: 1;
 }
 
+
+footer{
+    width: 100vw;
+    height: 490px;
+    background-color: #3A3E41;
+    color: #a9a9a9;
+}
+
+.container-footer{
+    padding: 10px;
+    width: 100vw;
+}
+
+.container-footer h2{
+    padding: 20px 0px;
+  
+}
+
+.container-footer p{
+    margin: 20px 0px;
+   
+}
+
+.footer-links{
+    margin: 20px 0px;
+    
+}
+
+
+
+.footer-links li{
+    margin: 10px 0px;
+    list-style-type: none;
+}
+
+.footer-links a:hover{
+    color: #0CABA8;
+}
+
+
+
+.footer-links a{
+    color: #a9a9a9;
+}
+
 @media screen and (min-width:480px){
 
 
@@ -433,6 +484,14 @@ nav #menu li{
         height: 414px;
         width: 100%;
 
+    }
+
+    footer{
+        height: 420px;
+    }
+
+    .container-footer{
+        padding: 12px;
     }
 }
 
@@ -452,15 +511,40 @@ nav #menu li{
 
 @media screen and (min-width:768px){
 
+    footer{
+        height: 300px;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 35px;
+    }
+
+
+    .container-footer{
+        width: 84vw;
+        margin: 0 auto;
+    }
+
+    .container-footer h2, .container-footer p{
+        text-align: center;
+    }
+
     .card .img{
         display: flex;
         height: 281px;
         width: 100%;
     }
 
+    .container-article{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .icon-article{
        width: 550px;
-        width: 100%;
+        width: 50%;
     }
 
     .icon-article img{
@@ -468,6 +552,13 @@ nav #menu li{
          width: 100%;
  
      }
+
+     #prev-btn-text i, #next-btn-text i{
+        padding: 15px;
+        background-color: rgb(0, 0, 0, 0.1);
+        border-radius: 50%;
+       
+    }
         
 
     }
@@ -567,7 +658,7 @@ nav #menu li{
         }
 
         .icon-article{
-            width: 25%;
+            width: 33%;
         }
 
         #slide-show{
@@ -589,6 +680,48 @@ nav #menu li{
             height: 350px;
         }
 
+
+    }
+
+
+    @media screen and (min-width:1400px){
+
+        .icon-article{
+            width: 25%;
+        }
+
+        .container-footer{
+            display: flex;
+        }
+
+        footer{
+            height: 180px;
+        }
+
+        .container-footer{
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            width: 90vw;
+            margin: 0 auto;
+        }
+
+        .container-footer h2, .container-footer p{
+            text-align: left;
+        }
+
+        .container-footer p{
+            width: 50%;
+        }
+
+        .footer-links{
+            display: block;
+            margin: 0;
+        }
+
+        .footer-links li{
+           margin: 5px 0px;
+        }
 
     }
     

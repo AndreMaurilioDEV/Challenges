@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    html{
+        font-size: 62.5;
+    }
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+
+   
+
+    #home-container{
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .grid-container-home{
+        display: grid;
+      
+    }
+
+    
+    
+
+    .content-home-img{
+        height: 300px;
+        width: 300px;
+        background-color: black;
+    }
+
+    .skills-container{
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .grid-container-skills{
+        display: grid;
+    }
+
+    .grid-container-skills h3,p{
+        text-align: center;
+    }
+
+    .content-favorite-skills-button{
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-favorite-skills-button ol{
+      list-style-type: decimal;
+    }
+
+
+    .content-cards-img{
+        width: 100%;
+        height: 250px;
+        background-color: black;
+        border-radius: 15px;
+    }
+    .container-cards{
+        width: 95vw;
+        margin: 0 auto;
+    }
+    .grid-container-cards{
+        display: grid;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .content-cards{
+        position: relative;
+        
+    }
+
+    .overlay-cards{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-color: blue;
+        opacity: 0;
+        border-radius: 15px;
+    }
+
+    .overlay-cards:hover {
+        opacity: 1;
+    }
+
+    .overlay-cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .overlay-cards-content{
+        text-align: center;
+    }
+
+    .grid-container-contato{
+        display: grid;
+        gap: 10px;
+    }
+
+    .container-contato{
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    #inp-name, #inp-email, #text-area{
+        margin-bottom: 20px;
+    }
+
+    #inp-name, #inp-email{
+        padding: 20px 170px 20px 5px;
+    }
+
+
+   .button-contato-submit{
+    display: flex;
+    justify-content: center;
+   }
+
+   /*HOME RESPONSIVO
+   .flex-container-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }*/
+
+
+
+    
+
+    
+</style>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <h3>AndreDEV</h3>
+        </div>
+
+        <div class="menu">
+
+        </div>
+    </header>
+
+
+    <main>
+        <section id="home-container">
+            <div class="grid-container-home">
+                <div class="flex-container-home">
+                    <div class="content-home">
+                        <div class="content-home-data">
+                            <h3 class="content-home-subtitulo">Lorem ipsum dolor, sit amet consectetur</h3>
+                            <h3 class="content-home-titulo">Andre Maurilio</h3>
+                            <p class="content-home-desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam necessitatibus neque laudantium ea alias sapiente quidem aliquid, nobis quia quis!</p>
+                        </div>
+                </div>
+                    <div class="content-home-social">
+                        <a href="" class="home-social-link">LINK</a>
+                        <a href="" class="home-social-link">LINK</a>
+                        <a href="" class="home-social-link">LINK</a>
+                    </div>
+                </div>
+                
+                <div class="content-home-img"><img src="#" alt=""></div>
+              
+
+
+            </div>
+        </section>
+    </main>
+
+    <section id="skills">
+        <div class="skills-container">
+            <div class="grid-container-skills">
+                <div class="content-favorite-skills">
+                    <h3>Favorite Skills</h3>
+                    <h3>My Skills</h3>
+                    <p>Veja todas minha skills, a partir de projetos</p>
+                    <div class="content-favorite-skills-button">
+                        <button class="skills-button">Ver Projetos</button>
+                    </div>
+                </div>
+
+                <div class="skills-container">
+                    <div class="skills-nomes">
+                       <ol>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                       </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="cards">
+        <div class="container-cards">
+            <h3>Projetos Recentes</h3>
+            <div class="grid-container-cards">
+
+
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+    
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+    
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+    
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+    
+    
+    
+                <div class="content-cards">
+                    <div class="content-cards-img">
+                    </div>
+                    <div class="overlay-cards">
+                        <div class="overlay-cards-container">
+                            <div class="overlay-cards-content">
+                                <h3>Site</h3>
+                                <p>View Demo</p>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section id="contato">
+        <div class="container-contato">
+            <div class="grid-container-contato">
+                <h3>Contact Me</h3>
+                <form action="#">
+                    <input type="text"  id="inp-name" placeholder="Insira seu nome">
+                    <input type="email"  id="inp-email" placeholder="Insira seu email">
+                    <textarea  id="text-area" cols="46" rows="20" placeholder="Insira sua mensagem"></textarea>
+                </form>
+                <div class="button-contato-submit">
+                    <button type="submit">Mandar Mensagem</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

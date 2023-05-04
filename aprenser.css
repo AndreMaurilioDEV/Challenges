@@ -1,0 +1,283 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+header{
+    background-color: #252526;
+    display: flex;
+    height: 85px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-container{
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-list{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+
+.header-nav-list-item a{
+    text-decoration: none;
+    color: white;
+    padding: 12px 25px;
+   
+}
+
+ .header-nav-list-item:hover a{
+    background-color: yellow;
+    color: #252526;
+    
+}
+
+.header-nav-list-item{
+    font-size: 15px;
+    border: 1px solid yellow;
+    padding: 10px 0px;
+}
+
+main{
+    background: linear-gradient(to bottom, transparent, #F2CB05);
+    
+    
+}
+
+.main-container{
+    width: 75vw;
+    padding-top: 85px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content-title{
+    font-size: 30px;
+}
+
+.main-content-img{
+    display: flex;
+}
+
+.main-content-button{
+    background-color: #F2B705;
+    padding: 15px 50px;
+    font-size: 16px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+}
+
+.main-content-button:hover{
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.section-title{
+    text-align: center;
+    padding: 50px;
+}
+
+.card{
+  
+    border: 0.5px solid #d3d3d3;
+    border-radius: 15px;
+    
+}
+
+.card-content{
+    padding: 0px 10px 20px;
+}
+
+.card-img{
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.card-img img{
+    width: 100%;
+    height: 100%;
+
+}
+
+.overflow-card-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border-radius: 15px 15px 0px 0px;
+    right: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.card:hover{
+    outline: 1px solid gray;
+    cursor: pointer;
+}
+.card:hover .overflow-card-img {
+    opacity: 1;
+}
+
+.card-title{
+    margin: 20px 0px;
+    font-size: 22px;
+}
+
+.cards-container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.grid-container-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.cards-links{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.cards-links-button{
+    padding: 25px 50px;
+    background-color: #F2B705;
+    outline: 0;
+    border: 0;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.cards-links-button:hover{
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#nossa-escola{
+    background-color: #1F4A6F;
+    height: 550px;
+}
+
+.nossa-escola-container{
+    height: 100%;
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+
+.nossa-escola-content{
+    width: 45%;
+    color: white;
+  
+}
+
+.nossa-escola-img{
+    display: flex;
+    align-self: flex-end;
+}
+
+.nossa-escola-content-title{
+    margin: 30px 0px;
+    font-size: 25px;
+
+}
+
+.contato-container{
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+.contato-map{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+}
+
+.contato-map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+address{
+    
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 15px 0px;
+}
+
+
+.contanto-content-endereco, .contanto-content-email, .contanto-content-telefone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.contanto-content-endereco i, .contanto-content-email i , .contanto-content-telefone i{
+    margin: 20px 0px;
+    font-size: 25px;
+    
+}
+
+.contanto-content-endereco i{
+    color: red;
+}
+
+.contanto-content-email i{
+    color: #252526;
+}
+
+.contanto-content-telefone i{
+    color: #1F4A6F;
+}
+
+
+
+footer{
+    background-color: #252526;
+    height: 65px;
+}
+
+.footer-container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-footer{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    
+
+}
+
+

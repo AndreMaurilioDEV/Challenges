@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3181da0dea.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Poppins, sans-serif;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+
+
+    body,html{
+        height: 100%;
+        background-color: rgb(135, 135, 211);
+    }
+
+    .lista-contato-title{
+        padding: 20px;
+        color: white;
+    }
+
+    .lista-container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+
+    .listas{
+        height: 450px;
+        overflow: auto;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    .lista{
+        display: flex;
+        gap: 20px;
+        background-color: white;
+        padding: 12px;
+        border-bottom: 1px solid #a9a9a9;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .lista-contato-img img{
+        border-radius: 50%;
+        width: 85px;
+    }
+
+    .lista-contato-links{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .lista-contato-infos{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .lista-contato-infos-name{
+        font-size: 18px;
+
+    }
+
+    .lista-contato-infos-email{
+        font-size: 15px;
+        color: gray;
+    }
+
+    .lista-contato-links i{
+        color: #d3d3d3;
+        opacity: 0;
+       
+    }
+
+    .lista-contato-links a:hover i{
+        color: black;
+        transition: 0.5s;
+    }
+
+    .lista:hover{
+        background-color: #eee;
+        transition: 0.8s;
+        cursor: pointer;
+    }
+
+    .lista:hover .lista-contato-links i{
+        opacity: 1;
+    }
+
+
+    .listas::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+    .listas::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+  }
+    .listas::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #A28ABF;
+  }
+    .listas::-webkit-scrollbar-thumb:hover{
+  	background: rgba(0,0,0,0.4);
+  }
+    .listas::-webkit-scrollbar-thumb:active{
+  	background: rgba(0,0,0,.2);
+  }
+
+    
+</style>
+<body>
+
+    
+
+    <div class="lista-container">
+        <h1 class="lista-contato-title">LISTA DE CONTATO</h1>
+        
+            <div class="listas">
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person-image.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Brennan George</p>
+                        <p class="lista-contato-infos-email">brenangeorge2@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person02.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Gina Herman</p>
+                        <p class="lista-contato-infos-email">GinaHerman2@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person03.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Rita Mendoza</p>
+                        <p class="lista-contato-infos-email">RitaMendoza2@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person04.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Bryan Mcgrath</p>
+                        <p class="lista-contato-infos-email">BryanMcgrath@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person05.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Mitchel Tucker</p>
+                        <p class="lista-contato-infos-email">MitchelTucker2@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+                <div class="lista">
+                    <div class="lista-contato-img">
+                        <img src="images_01/person06.jpg" alt="Imagem de uma pessoa">
+                    </div>
+                    <div class="lista-contato-infos">
+                        <p class="lista-contato-infos-name">Takemi Ogiwara</p>
+                        <p class="lista-contato-infos-email">TakemiOgiwara2@gmail.com</p>
+                    </div>
+                    <div class="lista-contato-links">
+                        <a href=""><i class="fa-solid fa-trash"></i></a>
+                        <a href=""><i class="fa-regular fa-pen-to-square"></i></a>
+                    </div>
+                </div>
+            </div>
+              
+    </div>
+
+
+    
+</body>
+</html>

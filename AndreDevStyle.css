@@ -1,0 +1,186 @@
+html{
+    font-size: 62.5;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*REUTILIZAÇÃO*/
+
+:root{
+    --hue: 162;
+    --first-color: hsl(var(--hue), 100%, 40%);
+    --first-color-alt: hsl(var(--hue), 56%, 35%);
+    --title-color: hsl(228, 8%, 95%);
+    --text-color: hsl(228, 8%, 65%);
+    --body-color: hsl(228, 15%, 20%);
+    --container-color: hsl(228, 15%, 15%);
+
+    --body-font: "Poppins", sans-serif;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+
+
+/*HOME*/
+
+#home-container{
+    width: 75vw;
+    margin: 0 auto;
+    
+}
+
+.grid-container-home{
+    display: grid;
+  
+}
+
+.content-home-img{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+}
+
+/*SKILLS*/
+
+.skills-container{
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.grid-container-skills{
+    display: grid;
+}
+
+.grid-container-skills h3,p{
+    text-align: center;
+}
+
+.content-favorite-skills-button{
+    display: flex;
+    justify-content: center;
+}
+
+.content-favorite-skills-button ol{
+  list-style-type: decimal;
+}
+
+
+/*CARDS*/
+
+
+.content-cards-img{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    border-radius: 15px;
+}
+.container-cards{
+    width: 95vw;
+    margin: 0 auto;
+}
+.grid-container-cards{
+    display: grid;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.content-cards{
+    position: relative;
+    
+}
+
+.overlay-cards{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: blue;
+    opacity: 0;
+    border-radius: 15px;
+}
+
+.overlay-cards:hover {
+    opacity: 1;
+}
+
+.overlay-cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.overlay-cards-content{
+    text-align: center;
+}
+
+/*CONTATO*/
+
+.grid-container-contato{
+    display: grid;
+    gap: 10px;
+}
+
+.container-contato{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#inp-name, #inp-email, #text-area{
+    margin-bottom: 20px;
+}
+
+#inp-name, #inp-email{
+    padding: 20px 170px 20px 5px;
+}
+
+
+.button-contato-submit{
+display: flex;
+justify-content: center;
+}
+
+/*HOME RESPONSIVO
+.flex-container-home{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}*/
+
+
+/* PONTOS */
+
+@media screen and(max-width: 320px){
+
+}
+
+@media screen and(min-width: 576px){
+    
+}
+
+@media screen and(min-width: 768px){
+    
+}
+
+@media screen and(min-width: 1023px){
+    
+}
+
+@media screen and(min-width: 1152px){
+    
+}

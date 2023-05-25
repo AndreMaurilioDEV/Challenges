@@ -30,17 +30,29 @@ html{
 }
 
 
+/*HEADER - MENU*/
+
+
+header{
+    height: 60px;
+    display: flex;
+    background: lightblue;
+    align-items: center;
+}
+
+
 
 /*HOME*/
 
 #home-container{
-    width: 75vw;
+    width: 90vw;
     margin: 0 auto;
     
 }
 
 .grid-container-home{
     display: grid;
+    gap: 25px;
   
 }
 
@@ -50,15 +62,50 @@ html{
     background-color: black;
 }
 
+.flex-container-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content-home-subtitulo{
+    text-align: center;
+
+}
+
+.content-home-titulo{
+    text-align: center;
+}
+
+.content-home-desc{
+    margin: 25px 0px;
+}
+
+.content-home-data{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-img{
+    display: flex;
+    justify-content: center;
+}
+
 /*SKILLS*/
 
+#skills{
+    height: 275px;
+}
 .skills-container{
-    width: 95vw;
-    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-container-skills{
     display: grid;
+    gap: 30px;
 }
 
 .grid-container-skills h3,p{
@@ -87,15 +134,23 @@ html{
 .container-cards{
     width: 95vw;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
 }
 .grid-container-cards{
     display: grid;
     grid-template-rows: auto;
     gap: 20px;
+    width: 100%;
 }
 
 .content-cards{
     position: relative;
+    width: 380px;
+    margin: 0 auto;
     
 }
 
@@ -138,14 +193,16 @@ html{
 .container-contato{
     width: 90vw;
     margin: 0 auto;
+   
+    
 }
 
 #inp-name, #inp-email, #text-area{
     margin-bottom: 20px;
 }
 
-#inp-name, #inp-email{
-    padding: 20px 170px 20px 5px;
+#inp-name, #inp-email, #text-area{
+    width: 100%;
 }
 
 
@@ -154,13 +211,10 @@ display: flex;
 justify-content: center;
 }
 
-/*HOME RESPONSIVO
-.flex-container-home{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}*/
+form{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* PONTOS */
@@ -169,12 +223,48 @@ flex-direction: column;
 
 }
 
-@media screen and(min-width: 576px){
-    
+@media screen and (min-width: 576px){
+
+
 }
 
-@media screen and(min-width: 768px){
-    
+
+@media screen and (min-width: 768px){
+    .grid-container-home{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .grid-container-skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .flex-container-home{
+        justify-content: center;
+    }
+
+    .inputs-form{
+        display: flex;
+        gap: 5px;
+    }
+
+    #inp-name, #inp-email{
+        padding: 10px;
+    }
+
+    .grid-container-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+    .content-cards{
+    width: 100%;
+    height: 100%;
+    }
+
+
 }
 
 @media screen and(min-width: 1023px){

@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); 
+
+
 html{
     font-size: 62.5;
+    font-family: Poppins,sans-serif;
 }
 
 *{
@@ -32,19 +36,39 @@ html{
 
 /*HEADER - MENU*/
 
-
+body{
+    background-color: var(--body-color);
+   
+}
 header{
-    height: 60px;
+    height: 75px;
     display: flex;
-    background: lightblue;
     align-items: center;
+    background-color: var(--container-color);
 }
 
+span{
+    color: var(--first-color-alt);
+}
+
+
+.header-logo h3{
+ color: var(--title-color);
+}
 
 
 /*HOME*/
 
+
+main{
+     height: 875px;
+}
+
 #home-container{
+    
+    height: 100%;
+    display: flex;
+    align-items: center;
     width: 90vw;
     margin: 0 auto;
     
@@ -66,19 +90,37 @@ header{
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 60px;
 }
 
 .content-home-subtitulo{
     text-align: center;
+    color: var(--title-color);
+    font-size: var(--bigger-font-size);
 
+}
+
+.content-home-talk button{
+    padding: 15px 30px ;
+    background-color: var(--first-color-alt);
+    color: var(--title-color);
+    border-radius: 10px;
+    outline: 0;
+    border: 0;
+    color: var(--title-color);
+    font-size: 1.2rem;
 }
 
 .content-home-titulo{
     text-align: center;
+    color: var(--first-color-alt);
+    font-size: 2.5rem;
 }
 
 .content-home-desc{
-    margin: 25px 0px;
+    margin-top: 50px;
+    color: var(--text-color);
+    font-size: 1rem;
 }
 
 .content-home-data{
@@ -94,7 +136,8 @@ header{
 /*SKILLS*/
 
 #skills{
-    height: 275px;
+    height: 385px;
+    background-color: var(--container-color);
 }
 .skills-container{
     height: 100%;
@@ -104,8 +147,45 @@ header{
 }
 
 .skills-container-nomes{
-   
+    display: flex;
+    justify-content: center;
 }
+
+.skills-nomes ol{
+    list-style: none;
+}
+
+.skills-nomes li{
+    color: var(--title-color);
+    line-height: 40px;
+}
+
+.content-favorite-skills h3{
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+}
+
+.content-favorite-skills h1{
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+}
+
+.content-favorite-skills p{
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+.skills-button{
+    border: 0;
+    border-radius: 10px;
+    outline: 0;
+    padding: 15px 45px;
+    background-color: var(--first-color);
+    color: var(--title-color);
+    font-size: 1rem;
+} 
 
 .grid-container-skills{
     display: grid;
@@ -119,6 +199,7 @@ header{
 .content-favorite-skills-button{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .content-favorite-skills-button ol{
@@ -126,9 +207,13 @@ header{
 }
 
 
+
+
 /*CARDS*/
 
-
+#cards{
+    padding: 25px 0px;
+}
 .content-cards-img{
     width: 100%;
     height: 250px;
@@ -158,13 +243,18 @@ header{
     
 }
 
+.container-cards h3{
+    font-size: var(--bigger-font-size);
+    color: var(--title-color);
+}
+
 .overlay-cards{
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     right: 0;
-    background-color: blue;
+    background-color: var(--first-color-alt);
     opacity: 0;
     border-radius: 15px;
 }
@@ -187,32 +277,76 @@ header{
     text-align: center;
 }
 
+.overlay-cards-content h3{
+    color: var(--title-color);
+}
+
+.overlay-cards-content p{
+    color: var(--title-color);
+}
+
 /*CONTATO*/
+
+
+#contato{
+    background-color: var(--container-color);
+    padding: 25px 0px;
+}
 
 .grid-container-contato{
     display: grid;
     gap: 10px;
 }
 
+.grid-container-contato h3{
+    text-align: center;
+    color: var(--title-color);
+}
+
 .container-contato{
     width: 90vw;
     margin: 0 auto;
    
-    
+
 }
 
 #inp-name, #inp-email, #text-area{
     margin-bottom: 20px;
+    width: 100%;
+    border: 0;
+    outline: 0;
 }
 
-#inp-name, #inp-email, #text-area{
-    width: 100%;
+#inp-name, #inp-email{
+    padding: 10px 0px;
+}
+
+#inp-name::placeholder{
+    padding-left: 10px;
+}
+
+#inp-email::placeholder{
+    padding-left: 10px;
+}
+
+#text-area::placeholder{
+    padding-left: 10px;
 }
 
 
 .button-contato-submit{
 display: flex;
 justify-content: center;
+}
+
+.button-contato-submit button{
+    padding: 10px 10px;
+    outline: 0;
+    border: 0;
+    color: var(--title-color);
+    background-color: var(--first-color-alt);
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 form{
